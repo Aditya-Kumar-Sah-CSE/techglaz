@@ -39,8 +39,8 @@ alert("Signup successful! You can now login.");
         alert("Please fill all fields!");
         return;
       }
-   
-alert("Signup successful! You can now login.");
+   alert("Login successful!!");
+
  window.location.href = "home.html";
      
     }
@@ -49,13 +49,16 @@ alert("Signup successful! You can now login.");
       const num = document.getElementById("number").value;
  
       // console.log(num);
-    
-      if(num&1){
-document.getElementById("ans").innerText = "odd"
+    if(!num){
+      alert("enter value first");
+      return;
+    }
+      else if(num&1){
+document.getElementById("ans").innerText = "odd";
 
       }
       else{
-       document.getElementById("ans").innerText = "Even"
+       document.getElementById("ans").innerText = "Even";
       }
     
     }
