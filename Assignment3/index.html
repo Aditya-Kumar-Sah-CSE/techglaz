@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>   
+
+    <div class="timer">
+        00:00:<span id="timer">30</span> &nbsp;s left
+    </div>
+    <div class="container">
+        <h1>
+            <u>Attempt each MCQs  </u><br><br>
+
+        </h1>
+     
+        <div id="que"><b>Question : <span id="que_id"></span> </b><br><br>
+            <h4 id="question">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo sed ea pariatur, assumenda nam facilis quis dolore, reprehenderit ipsum sit rem ducimus non necessitatibus.</h4>
+        </div>
+     <div class="ans">
+        <ul>
+            <li>
+                <input type="radio" name="option" id="opt_a"  class="answer">
+                <label class="ans_label" for="opt_a" id="text_opt_a">Option_A</label>
+            </li>
+            <li>
+                <input type="radio" name="option" id="opt_b"  class="answer">
+                <label class="ans_label" for="opt_b" id="text_opt_b">Option_B
+
+                </label>
+            </li>
+            <li>
+                <input type="radio" name="option" id="opt_c"  class="answer">
+                <label class="ans_label" for="opt_c" id="text_opt_c">Option_C</label>
+            </li>
+            <li>
+                <input type="radio" name="option" id="opt_d"  class="answer">
+                <label class="ans_label" for="opt_d" id="text_opt_d">Option_D</label>
+            </li>
+        </ul>
+     </div>
+     <div class="button">
+        <button onclick="pre()" type="submit" id="btn">Previous</button>
+        <button type="submit" id="btn" onclick="next()">Submit</button>
+        <button type="submit" id="btn" onclick="next()">Next</button>
+     </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

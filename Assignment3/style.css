@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  color: #ffffff;
+     border: none;
+   
+}
+:root{
+    --bgcolor:rgb(255, 255, 255);
+    --pad:1rem;
+    --bradius:0.5rem;
+}
+body{
+    height: 100vw;
+     position: relative;
+      background: radial-gradient(red,blue);
+      /* background: repeating-linear-gradient(red,blue); */
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    
+}
+h1 u{
+color: #ad0101;
+}
+h4{
+font-size: 2rem;
+}
+
+
+button{
+    
+    background-color: rgb(7, 32, 64);
+    color: rgb(0, 255, 72);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 1rem;
+    padding: 1rem;
+    height: 4rem;
+    width: 50%;
+    border-radius: 3rem;
+    border: none;
+    cursor: pointer;
+       margin-bottom: 1.5rem;
+    
+       
+
+}
+button:hover{
+    background-color: aquamarine;
+    color: black;
+ 
+}
+.button{
+    font-size: 2rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+    .container{
+    box-shadow: 0 4px 15px #00000033;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    width: 50%;
+ 
+  position: relative;
+    margin: auto;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    background-color: rgb(143, 60, 226);
+    padding: 1rem;
+    border-radius: 15px;
+     transition: all 0.4s;
+}.timer{
+    background-color: var(--bgcolor);
+    padding: var(--pad);
+    position: absolute;
+    top: 0rem;
+  right: 13rem;
+z-index: 10;
+    border-radius: var(--bradius);
+    color: #a80404;
+}
+#timer{
+    color: red;
+}
+.ans{
+    margin-top: 1rem;
+    padding: 0rem;
+   
+  
+}
+
+.ans_label{
+    text-align: right;
+    font-size: 1.5rem;
+     color: #000;
+}
+
+li{
+    list-style: none;
+    text-align: left;
+}
+.ans_label{
+    text-align: left;
+ 
+}
+
+
+
+
+
+    @media (max-width : 800px) {
+        .login-form{
+            margin: 0px;
+        }
+        h1{
+            margin-bottom: 0px;
+        };
+        input{
+    width: 90%;
+    height: 2rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    margin: 0rem;
+}
+button{
+    font-size: 1rem;
+    font-weight: 600;
+    margin:0.5rem;
+    height: 2rem;
+    width: 50%;
+    border-radius: 1.5rem;
+  
+}
+
+    }
+
+     @media (max-width : 1000px) {
+        .button{
+    display: block;
+
+}
+button{
+    padding: 0;
+}
+     }
